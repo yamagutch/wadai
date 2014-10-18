@@ -1,0 +1,9 @@
+<h3>地域を選択</h3>
+
+<ul>
+  <% @region_arr.each do |region| %>
+    <li>
+      <%= link_to region[1], :action => :trigger, :prefecture_id => @prefecture_id, :region_id => region[0] %>
+    </li>
+  <% end %>
+</ul>

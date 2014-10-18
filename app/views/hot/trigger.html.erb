@@ -1,0 +1,16 @@
+<h3>話すきっかけは・・・</h3>
+
+<h1><%= @message[0] %></h1>
+
+<div class="supplement">
+  <p>
+    <%= @message[1] %>
+  </p>
+  <p>
+    場所：<%= @region %>
+  </p>
+</div>
+
+<p>
+<%= link_to "過去の天気を見る", "http://weather.yahoo.co.jp/weather/jp/past/#{@prefecture_id}/#{@region_id}.html", :target => "_blank" %>
+</p>
